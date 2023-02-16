@@ -7,7 +7,7 @@ import java.util.Properties;
 public class EmailSender {
     public static void main(String args[]){
 
-        String to = "d.a.boguslavsjkyy@student.khai.edu";
+        String to = "y.s.syrovatka@student.khai.edu";
         String from = "y.s.syrovatka@student.khai.edu";
         String host = "smtp.gmail.com";
 
@@ -34,7 +34,7 @@ public class EmailSender {
 
             message.setSubject("Be careful");
             // actual mail body
-            message.setText("It" + "is" + "spam" + "!");
+            message.setText("It " + " is " + " spam" + "!");
 
             // Send message
             Transport.send(message);
