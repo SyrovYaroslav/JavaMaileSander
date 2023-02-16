@@ -11,7 +11,7 @@ public class SendingMails {
     @Autowired
     JavaMailSender javaMailSender;
 
-    public String sendMailExecute(String to, String from, String head, String text) {
+    public void sendMailExecute(String to, String from, String head, String text) {
         SimpleMailMessage simpleMailMessage = new SimpleMailMessage();
         simpleMailMessage.setFrom(from);
         simpleMailMessage.setTo(to);
@@ -25,6 +25,5 @@ public class SendingMails {
 
         }
         System.out.println("success");
-        return "Email Sent successfully....";
     }
 }

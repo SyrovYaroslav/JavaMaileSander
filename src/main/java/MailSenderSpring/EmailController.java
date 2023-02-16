@@ -15,10 +15,10 @@ public class EmailController {
     SendingMails sendingMails;
 
     @PostMapping("/send")
-    public String sendEmail(@RequestParam String to,
+    public void sendEmail(@RequestParam String to,
                             @RequestParam String from,
                             @RequestParam String head,
                           @RequestParam String text) {
-        return sendingMails.sendMailExecute(to, from, head, text);
+        sendingMails.sendMailExecute(to, from, head, text);
     }
 }
